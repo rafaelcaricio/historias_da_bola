@@ -8,4 +8,6 @@
 dist/
 .project
 .pydevproject
+*.db
 psd_files
+historias_da_bola/static/*

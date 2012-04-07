@@ -1,0 +1,82 @@
+{% load cms_tags sekizai_tags %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <title>{% page_attribute page_title %}</title>
+    <meta name="description" content="{% page_attribute meta_description %}">
+    <meta name="keywords" content="{% page_attribute meta_keywords %}">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Antic+Slab'>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/skeleton.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
+    {% render_block "css" %}
+
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ STATIC_URL }}img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}img/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+    {% cms_toolbar %}
+
+    <header id="top">
+        <div class="container">
+            <div class="sixteen columns">
+                <aside>
+                    <div class="four columns alpha side">
+                        {% placeholder left_header %}
+                    </div>
+                </aside>
+                <div class="eight columns logo-container"><a href="/" class="logo"></a></div>
+                <aside>
+                    <div class="four columns omega side">
+                        {% placeholder right_header %}
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </header>
+
+
+    {% block base_content %}{% endblock %}
+
+    <div class="bottom-content">
+        <div class="container">
+            <hr/>
+            <div class="sixteen columns">
+                {% placeholder bottom_content %}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="sixteen columns anchor-top-container"><a href="#top" title="ir para o topo da página"><div class="top-link"></div></a></div>
+            <div class="sixteen columns content">
+                <div class="eight columns alpha left"><p>2011. Históriasdabola.com. Todos os direitos reservados</p></div>
+                <div class="eight columns omega right"><p>siga-nos no <a href="http://twitter.com/rafaelcaricio">twitter</a>. nossa página no <a href="http://facebook.com/rafaelcaricio">facebook</a>.</p></div>
+            </div>
+        </div>
+    </footer>
+
+    {% render_block "js" %}
+    {% addtoblock "js" %}
+        <script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery-ui-1.8.18.custom.min.js"></script>
+    {% endaddtoblock %}
+
+</body>
+</html>
