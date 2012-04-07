@@ -11,3 +11,4 @@ dist/
 *.db
 psd_files
 historias_da_bola/static/*
+historias_da_bola/media/*

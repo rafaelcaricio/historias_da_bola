@@ -137,6 +137,7 @@ TEMPLATE_DIRS = (
 
 CMS_TEMPLATES = (
     ('index.html', 'Historias da Bola Main Page'),
+    ('history_events/event_6x4x2x4/full.html', '6x4x2x4 Columns Event'),
 )
 
 CMS_SEO_FIELDS = True
