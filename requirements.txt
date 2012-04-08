@@ -4,3 +4,4 @@ django-cms
 django-reversion
 django-tinymce
 PIL
+psycopg2
