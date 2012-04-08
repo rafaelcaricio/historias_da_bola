@@ -1,0 +1,241 @@
+@import "compass";
+/* Table of Content
+==================================================
+    #Site Styles
+    #Page Styles
+    #Media Queries
+    #Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+body {
+    font-family: 'Antic Slab', serif;
+}
+
+header {
+    width: 100%;
+    padding: 30px 0 40px;
+    border-top: solid 5px #454546;
+    background: url("../img/hbg.png") repeat;
+
+    aside {
+
+        p {
+            margin-bottom: 0px;
+            font-size: 18px;
+            letter-spacing: -1px;
+        }
+
+        div.side {
+            padding: 30px 0 30px;
+        }
+    }
+
+    .logo-container {
+        position: relative;
+        text-align: center;
+        height: 140px;
+    }
+
+    .logo {
+        display: inline-block;
+        height: 140px;
+        width: 162px;
+        background: url("../img/sprite.png") 0 0 no-repeat;
+    }
+}
+
+
+nav .menu {
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: -1px;
+    border-top: solid 1px #F1F1F1;
+    border-bottom: solid 1px #C9C9C9;
+    height: 27px;
+    padding-top: 7px;
+    @include background-image(linear-gradient(top, #FEFEFF 85%, #F3F3F4));
+    @include box-shadow(#F7F6F6 0px 3px 0px 0px);
+
+    strong {
+        float: left;
+        margin-right: 5px;
+    }
+
+    li {
+        line-height: inherit;
+        margin-bottom: 0;
+        float: left;
+        padding: 0 22px 0 22px;
+    }
+
+    form {
+        margin-bottom: 0;
+    }
+
+    .right {
+        text-align: right;
+    }
+}
+
+section.content {
+    margin-top: 15px;
+
+    article {
+        border-bottom: solid 1px #E3E3E3;
+        @include background-image(linear-gradient(top, #FFF 85%, #F7F7F7));
+
+        &.event-container {
+            @include box-shadow(#F7F6F6 0px 2px 0px 0px);
+            background-image: none;
+        }
+
+        .history-event {
+            height: 84px;
+            padding-top: 23px;
+
+            .year {
+                padding-top: 20px;
+
+                strong {
+                    font-family: 'Lato', sans-serif, helvetica;
+                    font-size: 53px;
+                    letter-spacing: -1px;
+                    color: #71ADC2;
+                }
+            }
+
+            hgroup {
+                padding-top: 10px;
+            }
+
+            h1, h2 {
+                font-family: 'Antic Slab', serif;
+                line-height: inherit;
+                font-size: 28px;
+                margin-bottom: 0;
+                color: #656565;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .icon {
+                text-align: center;
+
+                img {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+.bottom-content {
+    background-color: #F9F9F9;
+    padding-bottom: 90px;
+
+    hr {
+        border: solid 1px #71ADC2;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 72px;
+    background-color: #000;
+
+    .anchor-top-container {
+        margin-top: -18px;
+    }
+
+    .anchor-top-container .top-link {
+        position: absolute;
+        margin-left: 50%;
+        left: -23px;    
+        width: 46px;
+        height: 20px;
+        background: url("../img/sprite.png") -172px -33px no-repeat;
+        color: #fff;
+    }
+
+    .content {
+        margin-top: 25px;
+        background-color: #000;
+        color: #646464;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        font-weight: bold;
+    }
+
+    .left {
+        text-align: left;
+
+        p {
+            padding-left: 20px;
+        }
+    }
+
+
+    .right {
+        text-align: right;
+
+        p {
+            padding-right: 20px;
+        }
+    }
+}
+
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 1200 (desktop browsers) */
+@media only screen and (min-width: 960px) and (max-width: 1199px) {}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+        Just create a "fonts" folder at the root,
+        copy your FontName into code below and remove
+        comment brackets */
+
+/*	@font-face {
+        font-family: 'FontName';
+        src: url('../fonts/FontName.eot');
+        src: url('../fonts/FontName.eot?iefix') format('eot'),
+             url('../fonts/FontName.woff') format('woff'),
+             url('../fonts/FontName.ttf') format('truetype'),
+             url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+        font-weight: normal;
+        font-style: normal; }
+*/

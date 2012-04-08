@@ -2,7 +2,28 @@
 {% load cms_tags sekizai_tags %}
 
 {% block base_content %}
-    <div class="content">
-        {% placeholder main_content %}
+<nav>
+    <div class="menu">
+        <div class="container">
+            <div class="sixteen columns">
+                <div class="eight columns alpha left"><strong>filtros:</strong>
+                    <ul>
+                        <li><div class="menu-header">data</div></li>
+                        <li><div class="menu-header">clube <span>ou</span> seleção</div></li>
+                        <li><div class="menu-header">país</div></li>
+                    </ul>
+                </div>
+                <div class="eight columns omega right">
+                    <form method="GET" action="/search">
+                        <input type="search" autocomplete="on" maxlength="100" name="terms" placeholder="palavra-chave">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+</nav>
+
+<section class="content">
+    {% block content %}{% placeholder main_content %}{% endblock %}
+</section>
 {% endblock %}

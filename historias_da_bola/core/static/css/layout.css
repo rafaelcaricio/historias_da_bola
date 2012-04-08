@@ -4,136 +4,192 @@
     #Page Styles
     #Media Queries
     #Font-Face */
-
 /* #Site Styles
 ================================================== */
-
 /* #Page Styles
 ================================================== */
-
 body {
-    font-family: 'Antic Slab', serif;
+  font-family: 'Antic Slab', serif;
 }
 
 header {
-    width: 100%;
-    padding: 30px 0 40px;
-    border-top: solid 5px #454546;
+  width: 100%;
+  padding: 30px 0 40px;
+  border-top: solid 5px #454546;
+  background: url("../img/hbg.png") repeat;
 }
-
 header aside p {
-    margin-bottom: 0px;
-    font-size: 18px;
-    letter-spacing: -1px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  letter-spacing: -1px;
 }
-
 header aside div.side {
-    padding: 30px 0 30px;
+  padding: 30px 0 30px;
 }
-
 header .logo-container {
-    position: relative;
-    text-align: center;
-    height: 140px;
+  position: relative;
+  text-align: center;
+  height: 140px;
+}
+header .logo {
+  display: inline-block;
+  height: 140px;
+  width: 162px;
+  background: url("../img/sprite.png") 0 0 no-repeat;
 }
 
-header .logo {
-    display: inline-block;
-    height: 140px;
-    width: 162px;
-    background: url("../img/sprite.png") 0 0 no-repeat;
+nav .menu {
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: -1px;
+  border-top: solid 1px #F1F1F1;
+  border-bottom: solid 1px #C9C9C9;
+  height: 27px;
+  padding-top: 7px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(85%, #fefeff), color-stop(100%, #f3f3f4));
+  background-image: -webkit-linear-gradient(top, #fefeff 85%, #f3f3f4);
+  background-image: -moz-linear-gradient(top, #fefeff 85%, #f3f3f4);
+  background-image: -o-linear-gradient(top, #fefeff 85%, #f3f3f4);
+  background-image: -ms-linear-gradient(top, #fefeff 85%, #f3f3f4);
+  background-image: linear-gradient(top, #fefeff 85%, #f3f3f4);
+  -webkit-box-shadow: #f7f6f6 0px 3px 0px 0px;
+  -moz-box-shadow: #f7f6f6 0px 3px 0px 0px;
+  box-shadow: #f7f6f6 0px 3px 0px 0px;
+}
+nav .menu strong {
+  float: left;
+  margin-right: 5px;
+}
+nav .menu li {
+  line-height: inherit;
+  margin-bottom: 0;
+  float: left;
+  padding: 0 22px 0 22px;
+}
+nav .menu form {
+  margin-bottom: 0;
+}
+nav .menu .right {
+  text-align: right;
+}
+
+section.content {
+  margin-top: 15px;
+}
+section.content article {
+  border-bottom: solid 1px #E3E3E3;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(85%, #ffffff), color-stop(100%, #f7f7f7));
+  background-image: -webkit-linear-gradient(top, #ffffff 85%, #f7f7f7);
+  background-image: -moz-linear-gradient(top, #ffffff 85%, #f7f7f7);
+  background-image: -o-linear-gradient(top, #ffffff 85%, #f7f7f7);
+  background-image: -ms-linear-gradient(top, #ffffff 85%, #f7f7f7);
+  background-image: linear-gradient(top, #ffffff 85%, #f7f7f7);
+}
+section.content article.event-container {
+  -webkit-box-shadow: #f7f6f6 0px 2px 0px 0px;
+  -moz-box-shadow: #f7f6f6 0px 2px 0px 0px;
+  box-shadow: #f7f6f6 0px 2px 0px 0px;
+  background-image: none;
+}
+section.content article .history-event {
+  height: 84px;
+  padding-top: 23px;
+}
+section.content article .history-event .year {
+  padding-top: 20px;
+}
+section.content article .history-event .year strong {
+  font-family: 'Lato', sans-serif, helvetica;
+  font-size: 53px;
+  letter-spacing: -1px;
+  color: #71ADC2;
+}
+section.content article .history-event hgroup {
+  padding-top: 10px;
+}
+section.content article .history-event h1, section.content article .history-event h2 {
+  font-family: 'Antic Slab', serif;
+  line-height: inherit;
+  font-size: 28px;
+  margin-bottom: 0;
+  color: #656565;
+}
+section.content article .history-event h2 {
+  font-size: 16px;
+}
+section.content article .history-event .icon {
+  text-align: center;
+}
+section.content article .history-event .icon img {
+  display: inline;
 }
 
 .bottom-content {
-    background-color: #F9F9F9;
-    padding-bottom: 90px;
+  background-color: #F9F9F9;
+  padding-bottom: 90px;
 }
-
 .bottom-content hr {
-    border: solid 1px #71ADC2;
+  border: solid 1px #71ADC2;
 }
 
 footer {
-    width: 100%;
-    height: 72px;
-    background-color: #000;
+  width: 100%;
+  height: 72px;
+  background-color: #000;
 }
-
 footer .anchor-top-container {
-    margin-top: -18px;
+  margin-top: -18px;
 }
-
 footer .anchor-top-container .top-link {
-    position: absolute;
-    margin-left: 50%;
-    left: -23px;    
-    width: 46px;
-    height: 20px;
-    background: url("../img/sprite.png") -172px -33px no-repeat;
-    color: #fff;
+  position: absolute;
+  margin-left: 50%;
+  left: -23px;
+  width: 46px;
+  height: 20px;
+  background: url("../img/sprite.png") -172px -33px no-repeat;
+  color: #fff;
 }
-
 footer .content {
-    margin-top: 25px;
-    background-color: #000;
-    color: #646464;
-    font-size: 12px;
-    font-weight: bold;
+  margin-top: 25px;
+  background-color: #000;
+  color: #646464;
+  font-size: 12px;
+  font-weight: bold;
 }
-
 footer p {
-    margin: 0;
+  margin: 0;
 }
-
 footer a {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 footer .left {
-    text-align: left;
+  text-align: left;
 }
-
 footer .left p {
-    padding-left: 20px;
+  padding-left: 20px;
 }
-
 footer .right {
-    text-align: right;
+  text-align: right;
 }
-
-footer .right  p {
-    padding-right: 20px;
+footer .right p {
+  padding-right: 20px;
 }
 
 /* #Media Queries
 ================================================== */
-
 /* Smaller than standard 1200 (desktop browsers) */
-@media only screen and (min-width: 960px) and (max-width: 1199px) {}
-
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
-
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
-
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
-
-
 /* #Font-Face
 ================================================== */
 /* 	This is the proper syntax for an @font-face file
         Just create a "fonts" folder at the root,
         copy your FontName into code below and remove
         comment brackets */
-
 /*	@font-face {
         font-family: 'FontName';
         src: url('../fonts/FontName.eot');
