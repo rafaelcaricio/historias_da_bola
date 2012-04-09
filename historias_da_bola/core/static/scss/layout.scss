@@ -76,6 +76,10 @@ nav .menu {
 
     form {
         margin-bottom: 0;
+
+        input {
+            width: 180px;
+        }
     }
 
     .right {
@@ -85,6 +89,7 @@ nav .menu {
 
 section.content {
     margin-top: 15px;
+    margin-bottom: 60px;
 
     article {
         border-bottom: solid 1px #E3E3E3;
@@ -93,6 +98,7 @@ section.content {
         &.event-container {
             @include box-shadow(#F7F6F6 0px 2px 0px 0px);
             background-image: none;
+            margin-bottom: 2px;
         }
 
         .history-event {

@@ -1,0 +1,12 @@
+section.twitter-reactions .title { position: relative; border-top: solid 1px #EDEDED; }
+section.twitter-reactions .title h3 { position: absolute; padding: 0 10px 0 10px; top: -18px; left: -100px; margin-left: 50%; background-color: #F9F9F9; text-transform: uppercase; font-family: arial; font-size: 14px; font-weight: bold; color: #777; }
+section.twitter-reactions .four.tweet { border: solid 1px #EDEDED; border-right: solid 1px #DADADA; border-bottom: solid 1px #DADADA; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fafafa)); background-image: -webkit-linear-gradient(top, #ffffff, #fafafa); background-image: -moz-linear-gradient(top, #ffffff, #fafafa); background-image: -o-linear-gradient(top, #ffffff, #fafafa); background-image: -ms-linear-gradient(top, #ffffff, #fafafa); background-image: linear-gradient(top, #ffffff, #fafafa); -webkit-box-shadow: #f2f2f2 1px 1px 0px 0px; -moz-box-shadow: #f2f2f2 1px 1px 0px 0px; box-shadow: #f2f2f2 1px 1px 0px 0px; width: 268px; height: 122px; }
+section.twitter-reactions .tweet { margin-top: 27px; }
+section.twitter-reactions .tweet .bird { position: absolute; width: 33px; height: 30px; top: -1px; margin-left: 90px; background: url("../img/bird.png"); }
+section.twitter-reactions .tweet blockquote { position: relative; padding: 10px 10px 0 10px; border-left: 0; line-height: 0; }
+section.twitter-reactions .tweet blockquote a { color: #71ADC2; }
+section.twitter-reactions .tweet blockquote s { text-decoration: none; }
+section.twitter-reactions .tweet blockquote p { width: 248px; position: absolute; font-size: 15px; line-height: normal; }
+section.twitter-reactions .tweet .original-tweet-url { text-decoration: none; }
+section.twitter-reactions .tweet .original-tweet-url:hover { text-decoration: underline; }
+section.twitter-reactions .tweet abbr { display: block; margin: 88px 0 0 10px; text-transform: uppercase; font-family: arial; font-size: 10px; color: #777; }

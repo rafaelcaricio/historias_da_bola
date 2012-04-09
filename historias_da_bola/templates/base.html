@@ -17,9 +17,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic+Slab|Quattrocento+Sans:400,700|Lato:100">
+
+    {% addtoblock "css" %}
     <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/skeleton.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
+    {% endaddtoblock %}
+
     {% render_block "css" %}
 
     <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
@@ -50,15 +54,35 @@
         </div>
     </header>
 
+    <nav>
+        <div class="menu">
+            <div class="container">
+                <div class="sixteen columns">
+                    <div class="eight columns alpha left"><strong>filtros:</strong>
+                        <ul>
+                            <li><div class="menu-header">data</div></li>
+                            <li><div class="menu-header">clube <span>ou</span> seleção</div></li>
+                            <li><div class="menu-header">país</div></li>
+                        </ul>
+                    </div>
+                    <div class="eight columns omega right">
+                        <form method="GET" action="/search">
+                            <input type="search" autocomplete="on" maxlength="100" name="terms" placeholder="palavra-chave">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    {% block base_content %}{% endblock %}
+    <section class="content">
+    {% block content %}{% placeholder base_content %}{% endblock %}
+    </section>
 
     <div class="bottom-content">
         <div class="container">
             <hr/>
-            <div class="sixteen columns">
-                {% placeholder bottom_content inherit %}
-            </div>
+            {% placeholder bottom_content inherit %}
         </div>
     </div>
 
@@ -73,6 +97,7 @@
     </footer>
 
     {% render_block "js" %}
+
     {% addtoblock "js" %}
         <script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"></script>
         <script src="{{ STATIC_URL }}js/jquery-ui-1.8.18.custom.min.js"></script>

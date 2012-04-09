@@ -1,0 +1,55 @@
+{% load sekizai_tags %}
+{% addtoblock "css" %}
+<link rel="stylesheet" href="{{ STATIC_URL }}twitter_plugin/css/twitter_plugin.css">
+{% endaddtoblock %}
+{% addtoblock "js" %}
+<script src="{{ STATIC_URL }}twitter_plugin/js/twitter_plugin.js"></script>
+{% endaddtoblock %}
+
+<section class="twitter-reactions">
+    <div class="container">
+        <div class="sixteen columns title">
+            <h3>acompanhe no twitter</h3>
+        </div>
+        <div class="sixteen columns tweets">
+
+            <div class="four columns alpha tweet">
+                <blockquote cite="http://twitter.com/:url">
+                    <p>Lateral do <a href="#" class="hashtag" target="_blank"><s>#</s>Eintracht</a> faz gol de muuuuuuuito longe na <a href="#" class="hashtag" target="_blank"><s>#</s>Bundesliga</a>. Assista! <a href="#" class="timeline-link" rel="nofollow" target="_blank">http://glo.bo/fLWEYp</a></p>
+                </blockquote>
+                <a href="http://twitter.com/#" class="original-tweet-url"><abbr class="timeago" title="2012-04-09 16:11">30 minutos atrás</abbr></a>
+            </div>
+
+            <div class="four columns tweet">
+                <blockquote cite="http://twitter.com/:url">
+                    <p>sob os olhares de CR7, Benzema faz dois em triunfo do Real. Assista aos gols! <a href="#" class="timeline-link" rel="nofollow" target="_blank">http://glo.bo/eCQkdY</a></p>
+                </blockquote>
+                <a href="http://twitter.com/#" class="original-tweet-url"><abbr class="timeago" title="2012-04-09 16:11">30 minutos atrás</abbr></a>
+            </div>
+
+            <div class="four columns tweet">
+                <div class="bird"></div>
+                <blockquote cite="http://twitter.com/:url">
+                    <p>gol inacreditável perdido por atacante do Cesena diante do <a href="#" class="mention" target="_blank"><s>@</s>Juventus</a>. Veja! <a href="#" class="timeline-link" rel="nofollow" target="_blank">http://glo.bo/gAPIR7</a></p>
+                </blockquote>
+                <a href="http://twitter.com/#" class="original-tweet-url"><abbr class="timeago" title="2012-04-09 16:11">30 minutos atrás</abbr></a>
+            </div>
+
+            <div class="four columns omega tweet">
+                <blockquote cite="http://twitter.com/:url">
+                    <p>Torcedora fanática do All Boys, atriz pornô <a href="#" class="hashtag" target="_blank"><s>#</s>argentina</a> promete ficar nua como protesto pelo clube estar sendo roubado... <a href="#" class="timeline-link" rel="nofollow" target="_blank">http://vai.la/1S0J</a></p>
+                </blockquote>
+                <a href="http://twitter.com/#" class="original-tweet-url"><abbr class="timeago" title="2012-04-09 16:11">30 minutos atrás</abbr></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% comment %}
+
+http://api.twitter.com/1/statuses/user_timeline.json?screen_name=rafaelcaricio&count=4&include_entities=1&callback=jsonp1333819756736
+
+http://search.twitter.com/search.json?&q=caricio&rpp=4&include_entities=1&callback=jsonp1333819876214
+
+{% endcomment %}

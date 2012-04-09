@@ -136,7 +136,7 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-    ('index.html', 'Historias da Bola Main Page'),
+    ('base.html', 'Historias da Bola Base Page'),
     ('history_events/event_6x4x2x4/full.html', '6x4x2x4 Columns Event'),
 )
 
@@ -159,6 +159,7 @@ INSTALLED_APPS = (
     'history_events',
     #'reversion',
 
+    'twitter_plugin',
     # plugins
     'cms.plugins.text',
     'cms.plugins.twitter',
