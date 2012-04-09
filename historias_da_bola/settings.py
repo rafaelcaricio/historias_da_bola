@@ -137,6 +137,7 @@ TEMPLATE_DIRS = (
 
 CMS_TEMPLATES = (
     ('base.html', 'Historias da Bola Base Page'),
+    ('index.html', 'Historias da Bola Index Page'),
     ('history_events/event_6x4x2x4/full.html', '6x4x2x4 Columns Event'),
 )
 
