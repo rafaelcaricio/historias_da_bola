@@ -19,9 +19,11 @@ nav .menu form { margin-bottom: 0; }
 nav .menu form input { width: 180px; }
 nav .menu .right { text-align: right; }
 
-section.content { margin-top: 15px; margin-bottom: 60px; }
+section.content { margin-bottom: 60px; }
 section.content article { border-bottom: solid 1px #E3E3E3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(85%, #ffffff), color-stop(100%, #f7f7f7)); background-image: -webkit-linear-gradient(top, #ffffff 85%, #f7f7f7); background-image: -moz-linear-gradient(top, #ffffff 85%, #f7f7f7); background-image: -o-linear-gradient(top, #ffffff 85%, #f7f7f7); background-image: -ms-linear-gradient(top, #ffffff 85%, #f7f7f7); background-image: linear-gradient(top, #ffffff 85%, #f7f7f7); }
-section.content article.event-container { -webkit-box-shadow: #f7f6f6 0px 2px 0px 0px; -moz-box-shadow: #f7f6f6 0px 2px 0px 0px; box-shadow: #f7f6f6 0px 2px 0px 0px; background-image: none; margin-bottom: 2px; }
+section.content article.event-container { margin-top: 3px; margin-bottom: 2px; -webkit-box-shadow: #f7f6f6 0px 2px 0px 0px; -moz-box-shadow: #f7f6f6 0px 2px 0px 0px; box-shadow: #f7f6f6 0px 2px 0px 0px; background-image: none; height: 510px; }
+section.content article.event-container .history-part { padding-top: 50px; }
+section.content article.event-container.black-gradient { height: 508px; border-top: solid 2px #000; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3e3e3e), color-stop(100%, #000000)); background-image: -webkit-linear-gradient(top, #3e3e3e, #000000); background-image: -moz-linear-gradient(top, #3e3e3e, #000000); background-image: -o-linear-gradient(top, #3e3e3e, #000000); background-image: -ms-linear-gradient(top, #3e3e3e, #000000); background-image: linear-gradient(top, #3e3e3e, #000000); color: #FFF; }
 section.content article .history-event { height: 84px; padding-top: 23px; }
 section.content article .history-event .year { padding-top: 20px; }
 section.content article .history-event .year strong { font-family: 'Lato', sans-serif, helvetica; font-size: 53px; letter-spacing: -1px; color: #71ADC2; }
