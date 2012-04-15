@@ -101,6 +101,10 @@ section.content {
             background-image: none;
             height: 510px;
 
+            .container {
+                height: 100%;
+            }
+
             .history-part {
                 padding-top: 50px;
             }
@@ -110,12 +114,21 @@ section.content {
                 border-top: solid 2px #000;
                 @include background-image(linear-gradient(top, #3E3E3E, #000));
                 color: #FFF;
+
+                h1, h2, h3, h4, h5 {
+                    color: #fff;
+                    font-family: inherit;
+                }
             }
         }
 
         .history-event {
             height: 84px;
             padding-top: 23px;
+
+            a {
+                display: block;
+            }
 
             .year {
                 padding-top: 20px;

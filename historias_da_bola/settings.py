@@ -160,11 +160,13 @@ INSTALLED_APPS = (
     'history_events',
     #'reversion',
 
+    'core',
     'twitter_plugin',
+    'destaques.background_image',
+
     # plugins
     'cms.plugins.text',
     'cms.plugins.twitter',
 
-    'core',
 )
 

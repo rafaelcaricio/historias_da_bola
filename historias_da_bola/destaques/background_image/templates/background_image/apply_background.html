@@ -1,0 +1,11 @@
+{% load cms_tags sekizai_tags %}
+
+{% addtoblock "css" %}
+<style>
+    article.event-container .container {
+        background: url("{{ object.background_image.url }}") {{ object.left }}px {{ object.top }}px no-repeat;
+    }
+</style>
+{% endaddtoblock %}
+
+
