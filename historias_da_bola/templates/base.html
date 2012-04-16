@@ -96,12 +96,13 @@
         </div>
     </footer>
 
-    {% render_block "js" %}
 
     {% addtoblock "js" %}
         <script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"></script>
         <script src="{{ STATIC_URL }}js/jquery-ui-1.8.18.custom.min.js"></script>
     {% endaddtoblock %}
+
+    {% render_block "js" %}
 
 </body>
 </html>
