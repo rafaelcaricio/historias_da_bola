@@ -14,12 +14,25 @@ $(function() {
         },
 
         _create: function() {
+            this.elements = {};
             this._createBasicMarkup();
             this._pullTweets();
         },
 
         _createBasicMarkup: function() {
-            ;
+            this.element.append([
+                '<section class="twitter-reactions">',
+                    '<div class="container">',
+                        '<div class="sixteen columns title">',
+                            '<h3>acompanhe no twitter</h3>',
+                        '</div>',
+                        '<div class="sixteen columns tweets">',
+                        '</div>',
+                    '</div>',
+                '</section>'
+            ].join(''));
+
+            this.elements.tweets = this.element.find('.tweets');
         },
 
         _pullTweets: function() {
