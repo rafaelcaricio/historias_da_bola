@@ -9,8 +9,8 @@ $(function() {
         },
 
         twitterAPI: {
-            search: 'http://search.twitter.com/search.json?&q=globo.com&rpp=4&include_entities=1&callback=jsonp1333819876214',
-            user: 'http://api.twitter.com/1/statuses/user_timeline.json?screen_name=rafaelcaricio&count=4&include_entities=1&callback=jsonp1333819756736'
+            search: 'http://search.twitter.com/search.json',
+            user: 'http://api.twitter.com/1/statuses/user_timeline.json'
         },
 
         _create: function() {
